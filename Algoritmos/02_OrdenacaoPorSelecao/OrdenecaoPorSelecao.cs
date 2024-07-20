@@ -1,8 +1,8 @@
 ﻿namespace Algoritmos;
 
-public static class OrdenecaoPorSelecao
+public class OrdenecaoPorSelecao : IAlgoritmo
 {
-    public static void Run()
+    public void Run()
     {
         var arr = new List<int> { 5, 3, 6, 2, 10 };
         Console.WriteLine(string.Join(", ", arr));
@@ -10,6 +10,7 @@ public static class OrdenecaoPorSelecao
     }
 
     private static int[] SelectionSort(List<int> arr)
+    private int[] SelectionSort(List<int> arr)
     {
         var newArr = new int[arr.Count];
         for (int i = 0; i < newArr.Length; i++)
@@ -21,7 +22,7 @@ public static class OrdenecaoPorSelecao
         return newArr;
     }
 
-    private static int FindSmallest(List<int> arr)
+    private int FindSmallest(List<int> arr)
     {
         var smallest = arr[0];
         var smallestIndex = 0;
