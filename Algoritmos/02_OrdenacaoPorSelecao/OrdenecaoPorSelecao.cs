@@ -9,7 +9,11 @@ public class OrdenecaoPorSelecao : IAlgoritmo
         Console.WriteLine(string.Join(", ", SelectionSort(arr)));
     }
 
-    private static int[] SelectionSort(List<int> arr)
+    /// <summary>
+    /// O(n x n) ou O(n^2)
+    /// </summary>
+    /// <param name="arr"></param>
+    /// <returns></returns>
     private int[] SelectionSort(List<int> arr)
     {
         var newArr = new int[arr.Count];
@@ -37,7 +41,7 @@ public class OrdenecaoPorSelecao : IAlgoritmo
         return smallestIndex;
     }
 
-    public static int[] SelectionSort(int[] unorderedArray)
+    public int[] SelectionSort(int[] unorderedArray)
     {
         for (var i = 0; i < unorderedArray.Length; i++)
         {
