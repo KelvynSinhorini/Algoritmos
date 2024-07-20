@@ -6,8 +6,9 @@ public class Program
 {
     private static Dictionary<string, Action> Algoritmos = new Dictionary<string, Action>
     {
-        //{ "1", () =>  },
-        { "2", () => OrdenecaoPorSelecao.Run() }
+        { "1", () => new BuscaBinaria().Run() },
+        { "2", () => new OrdenecaoPorSelecao().Run() },
+        { "3", () => new OrdenecaoPorSelecaoDupla().Run() },
     };
 
     static void Main(string[] args)
@@ -16,7 +17,7 @@ public class Program
         {
             Console.WriteLine(
                 "Lista de Algoritmos\n" +
-                "1 - .\n" +
+                "1 - Busca Binaria (Binary Search).\n" +
                 "2 - Ordenação por Seleção (Selection Sort).\n" +
                 "3 - Ordenação por Seleção Dupla (Double Selection Sort).\n" +
                 "X - Sair"
