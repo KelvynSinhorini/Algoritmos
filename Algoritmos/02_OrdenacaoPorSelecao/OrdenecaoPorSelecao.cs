@@ -1,4 +1,4 @@
-﻿namespace Algoritmos._02_OrdenacaoPorSelecao;
+﻿namespace Algoritmos;
 
 public static class OrdenecaoPorSelecao
 {
